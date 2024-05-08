@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ix="http://www.xbrl.org/2013/inlineXBRL" xmlns:ixt="http://www.xbrl.org/inlineXBRL/transformation/2020-02-12" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:nl-cd="http://www.nltaxonomie.nl/nt17/sbr/20220301/dictionary/nl-common-data" xmlns:frc-vt-i="https://www.sbrnexus.nl/vt17/frc/20230531.b/dictionary/frc-vt-data" xmlns:frc-vt-dim="https://www.sbrnexus.nl/vt17/frc/20230531.b/dictionary/frc-vt-axes" xmlns:frc-vt-dm="https://www.sbrnexus.nl/vt17/frc/20230531.b/dictionary/frc-vt-domains">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Opdrachtbrief voorbeeld VT17</title>
+		<style type="text/css">
+    @media print {
+      html {
+        font-size: 10pt !important;
+      }
+
+      .page {
+        padding: 0 !important;
+        margin: 0 auto !important;
+        box-shadow: none !important;
+        height: calc(100vh - 1rem) !important;
+        min-height: auto !important;
+        min-width: auto !important;
+      }
+    }
+
+    html {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: #fff;
+      font-size: 15px;
+    }
+
+    body {
+      counter-reset: page h2 h3 h4 h5;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* page layout */
+    .page {
+      min-width: 21cm;
+      min-height: 29.7cm;
+      width: 21cm;
+      height: 29.7cm;
+      margin: 1cm;
+      padding: 1cm 1.5cm;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      counter-increment: page;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      overflow: auto;
+      border-radius: 6px;
+    }
+
+    .page:not(:last-child) {
+      page-break-after: always;
+    }
+
+    .page::-webkit-scrollbar {
+      background-color: red;
+      width: 10px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    /* page content layout */
+    .header-content,
+    .footer-content,
+    .content {
+      padding-left: 1rem;
+    }
+
+    .header-content,
+    .footer-content {
+      padding-left: 1rem;
+    }
+
+    .header-content {
+      padding-bottom: 2rem;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    /* header and footer */
+    .header-line {
+      height: 1rem;
+      border-top: solid 1px black;
+      border-left: solid 1px black;
+    }
+
+    .header,
+    .footer {
+      font-style: italic;
+      font-weight: normal;
+      text-align: left;
+      background-color: white;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .page:nth-child(n+3) .footer-page-number::after {
+      content: "Pagina " counter(page) " van 33";
+    }
+
+    .footer-content::after {
+      content: "Opdrachtbief, verstrekt door BANK A";
+    }
+
+    .header-content::after {
+      content:;
+    }
+
+    /* hidden */
+    .hidden {
+      display: none;
+    }
+
+    /* horizontal rules */
+    hr {
+      border-style: solid none none;
+      border-color: black;
+      border-width: 1px;
+    }
+
+    /* first page */
+    .first-page-title,
+    .first-page-subtitle {
+      font-size: 2rem;
+    }
+
+    .first-page-title {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .first-page-subtitle {
+      font-weight: normal;
+    }
+
+    /* paragraphs */
+    p {
+      white-space: pre-line;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    /* chapters */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin-top: .75rem;
+      margin-bottom: .5rem;
+    }
+
+    table h2,
+    table h3 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    h2,
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    table h2,
+    table h3 {
+      font-size: 1rem;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) h2 {
+      writing-mode: vertical-rl;
+      rotate: 180deg;
+      text-align: left;
+    }
+
+    table.vertical-headers tbody:first-of-type td:nth-child(n+2) {
+      text-align: -webkit-right;
+      padding-right: 0.3rem;
+      max-height: 125px;
+    }
+
+    h3,
+    h4,
+    h5 {
+      font-weight: normal;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-style: italic;
+    }
+
+    /* chapter numbering */
+    h2:not(table h2) {
+      counter-increment: h2;
+      counter-set: h3 h4 h5;
+    }
+
+    h2:not(table h2)::before {
+      content: counter(h2) ". ";
+    }
+
+    h3:not(table h3) {
+      counter-increment: h3;
+      counter-set: h4 h5;
+    }
+
+    h3:not(table h3)::before {
+      content: counter(h2) "." counter(h3) ". ";
+    }
+
+    h4:not(table h4) {
+      counter-increment: h4;
+      counter-set: h5;
+    }
+
+    h4:not(table h4)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) ". ";
+    }
+
+    h5:not(table h5) {
+      counter-increment: h5;
+    }
+
+    h5:not(table h5)::before {
+      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+    }
+
+    /* table layout */
+    table {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      text-align: right;
+      table-layout: fixed;
+    }
+
+    .table-xs {
+      width: 40%;
+    }
+
+    .table-s {
+      width: 55%;
+    }
+
+    .table-m {
+      width: 70%;
+    }
+
+    .table-l {
+      width: 85%;
+    }
+
+    .table-full {
+      width: 100%;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    td {
+      vertical-align: bottom;
+    }
+
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+      font-size: 1rem;
+    }
+
+    .top-table-header hr,
+    .sub-total hr,
+    .total hr {
+      border-style: solid none none;
+      border-color: black;
+    }
+
+    .dotted hr {
+      border-style: dotted none none;
+      border-color: black;
+    }
+
+    .top-table-header hr,
+    .sub-total hr,
+    .dotted hr {
+      border-width: 1px;
+    }
+
+    .total hr {
+      border-width: 2px;
+      border-color: black;
+    }
+
+    tr.empty-row {
+      height: 1.4rem;
+    }
+
+    table tr> :first-child {
+      text-align: left;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    table.col-3xs col:nth-child(2n+2),
+    table.col-3xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 8%;
+    }
+
+    table.col-2xs col:nth-child(2n+2),
+    table.col-2xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 9%;
+    }
+
+    table.col-xs col:nth-child(2n+2),
+    table.col-xs:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 10%;
+    }
+
+    table.col-s col:nth-child(2n+2),
+    table.col-s:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 12.5%;
+    }
+
+    table.col-m col:nth-child(2n+2),
+    table.col-m:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 15%;
+    }
+
+    table.col-l col:nth-child(2n+2),
+    table.col-l:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 17.5%;
+    }
+
+    table.col-xl col:nth-child(2n+2),
+    table.col-xl:is(.annotated, .no-row-headers) col:nth-child(2n+3) {
+      width: 20%;
+    }
+
+    table.annotated col:nth-child(2) {
+      width: 50px;
+    }
+
+    .annotated tr> :nth-child(2) {
+      text-align: center;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    table col:nth-child(2n+3),
+    table.annotated col:nth-child(2n+4),
+    table.no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 8px;
+    }
+
+    table:is(.col-xs, .col-2xs, .col-3xs) col:nth-child(2n+3),
+    table:is(.col-xs, .col-2xs, .col-3xs).annotated col:nth-child(2n+4),
+    table:is(.col-xs, .col-2xs, .col-3xs).no-row-headers col:nth-child(2n+2) {
+      background-color: #ffffff;
+      width: 4px;
+    }
+
+    tr:not(.empty-row)>td:nth-child(2n+2) {
+      padding-right: 0.5rem;
+    }
+
+    tbody:nth-of-type(2)>tr:not(.empty-row)>td:nth-child(2n+2) {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .scale {
+      font-size: .8rem;
+    }
+
+    .footnote-table {
+      font-size: .9rem;
+      font-style: italic;
+    }
+
+    /* front page */
+    .title-content,
+    .title-line {
+      margin-left: 25%;
+      padding-left: 1rem;
+    }
+
+    .title-line {
+      height: 1rem;
+      border-top: solid 1px black;
+      border-left: solid 1px black;
+    }
+
+    .date-content,
+    .date-line {
+      width: 60%;
+      padding-left: 1rem;
+      font-style: italic;
+    }
+
+    .date-line {
+      margin-top: 13rem;
+      height: 1rem;
+      border-top: dotted 1px black;
+      border-left: dotted 1px black;
+    }
+
+    /* toc */
+    .toc-h1 {
+      font-weight: bold;
+    }
+
+    .toc-h2 {
+      font-style: italic;
+    }
+
+    .align-right {
+      float: right;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    /* lists */
+    ol,
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    .non-list-bullet {
+      display: list-item;
+      margin-left: 1.4rem;
+    }
+  </style>
+	</head>
+	<body>
+		<div class="hidden" style="display:none">
+			<ix:header>
+				<ix:references xml:lang="nl">
+					<link:schemaRef xlink:type="simple" xlink:href="https://www.sbrnexus.nl/vt17/frc/20230531.b/entrypoints/frc-rpt-vt-opdrachtbrief.xsd"/>
+				</ix:references>
+				<ix:resources>
+					<xbrli:context id="context_0">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:ReportAxis">frc-vt-dm:ReportMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_1">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:ReportAxis">frc-vt-dm:ReportMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_2">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:ClientAxis">frc-vt-dm:ClientMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_3">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:ContractorAxis">frc-vt-dm:ContractorMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_4">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:BAGOTHERIDAxis">
+								<frc-vt-dm:BAGOTHERIDTypedMember>BAGOTHER-1</frc-vt-dm:BAGOTHERIDTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_5">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:BAGPANDIDAxis">
+								<frc-vt-dm:BAGPANDIDTypedMember>BAGPAND-1</frc-vt-dm:BAGPANDIDTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_6">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+								<frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1</frc-vt-dm:BAGVBOIDTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_7">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:CoInstructorPartyAxis">frc-vt-dm:CoInstructorPartyMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_8">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+								<frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1</frc-vt-dm:BAGVBOIDTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_9">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+								<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_10">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:OwnersAxis">
+								<frc-vt-dm:OwnersTypedMember>Eigenaar 1</frc-vt-dm:OwnersTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+								<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_11">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:OwnersAxis">
+								<frc-vt-dm:OwnersTypedMember>Eigenaar 1</frc-vt-dm:OwnersTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+								<frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+							</xbrldi:typedMember>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_12">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+								<frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+							</xbrldi:typedMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_14">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:instant>2023-01-01</xbrli:instant>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:AssignmentInformationAxis">frc-vt-dm:AssignmentInformationMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_17">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:ValuationRemunerationAxis">frc-vt-dm:ValuationRemunerationMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:context id="context_18">
+						<xbrli:entity>
+							<xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+						</xbrli:entity>
+						<xbrli:period>
+							<xbrli:startDate>2023-01-01</xbrli:startDate>
+							<xbrli:endDate>2023-01-01</xbrli:endDate>
+						</xbrli:period>
+						<xbrli:scenario>
+							<xbrldi:explicitMember dimension="frc-vt-dim:PartyAxis">frc-vt-dm:DebtorPartyMember</xbrldi:explicitMember>
+						</xbrli:scenario>
+					</xbrli:context>
+					<xbrli:unit id="sqm">
+						<xbrli:measure>utr:sqm</xbrli:measure>
+					</xbrli:unit>
+					<xbrli:unit id="pure">
+						<xbrli:measure>xbrli:pure</xbrli:measure>
+					</xbrli:unit>
+					<xbrli:unit id="eur">
+						<xbrli:measure>iso4217:EUR</xbrli:measure>
+					</xbrli:unit>
+				
+				 </ix:resources>
+    </ix:header>
+	</div>
+	
+	
+	<div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <div class="title">
+        <div class="title-line"></div>
+        <div class="title-content">
+          <div class="first-page-title">Voorbeeld Opdrachtbrief VT17b</div>
+          <div class="first-page-subtitle">
+            <ix:nonNumeric contextRef="context_3" name="frc-vt-i:OrganisationName" id="ID000010" escape="false">Test BV</ix:nonNumeric>
+            <ix:nonNumeric contextRef="context_1" name="bw2-titel9:LegalEntityLegalForm" id="ID000020" escape="false">B.V.</ix:nonNumeric>
+          </div>
+          <div class="date">
+          </div>
+      </div>
+	  <div class="date-line"></div>
+        <div class="date-content">
+          <p>
+            Opdrachtbrief verstrekt op <ix:nonNumeric name="frc-vt-i:DocumentReportingDate" format="ixt:date-day-monthname-year-nl" id="ID0000100">01 januari 2023</ix:nonNumeric>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+				
+				
+	 <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1>Inhoud</h1>
+      <p>
+        <a href="#info-opdrachtbrief"><span class="toc-h1">Informatie over de opdrachtbrief <span class="align-right">3</span></span></a>
+       <a href="#Opdrachtbrief">Opdrachtbrief <span class="align-right">4</span></a>
+<a href="#Informatie over de opdrachtbrief">Informatie over de opdrachtbrief<span class="align-right">5</span></a>
+<a href="#Rapportage">Rapportage<span class="align-right">6</span></a>
+<a href="#Opdrachtnemer">Opdrachtnemer<span class="align-right">7</span></a>
+<a href="#Opdrachtgever">Opdrachtgever<span class="align-right">8</span></a>
+<a href="#Mede-opdrachtgever">Mede-opdrachtgever<span class="align-right">9</span></a>
+<a href="#Klant">Klant<span class="align-right">10</span></a>
+<a href="#Opdrachtinformatie">Opdrachtinformatie<span class="align-right">11</span></a>
+<a href="#Honorarium">Honorarium<span class="align-right">12</span></a>
+<a href="#Dataproduct verzoek">Dataproduct verzoek<span class="align-right">13</span></a>
+<a href="#Bijlage">Bijlage<span class="align-right">14</span></a>
+<a href="#Vastgoedobject">Vastgoedobject<span class="align-right">15</span></a>
+<a href="#Vastgoedobject referentie">Vastgoedobject referentie<span class="align-right">16</span></a>
+<a href="#Vastgoedobject informatie">Vastgoedobject informatie<span class="align-right">17</span></a>
+<a href="#Bezichtiging">Bezichtiging<span class="align-right">18</span></a>
+<a href="#BAGPAND-ID's">BAGPAND-ID's<span class="align-right">19</span></a>
+<a href="#BAGPAND-ID's">BAGPAND-ID's<span class="align-right">20</span></a>
+<a href="#BAGVBO-ID's">BAGVBO-ID's<span class="align-right">21</span></a>
+<a href="#Kadastrale aanduiding">Kadastrale aanduiding<span class="align-right">22</span></a>
+<a href="#BAGVBO-ID's">BAGVBO-ID's<span class="align-right">23</span></a>
+<a href="#BAGVBO-ID's">BAGVBO-ID's<span class="align-right">24</span></a>
+<a href="#Hoofdadres">Hoofdadres<span class="align-right">25</span></a>
+<a href="#BAGPAND-ID's">BAGPAND-ID's<span class="align-right">26</span></a>
+<a href="#Kadastrale aanduiding">Kadastrale aanduiding<span class="align-right">27</span></a>
+<a href="#BAGOTHER-ID's">BAGOTHER-ID's<span class="align-right">28</span></a>
+<a href="#Kadastrale aanduiding">Kadastrale aanduiding<span class="align-right">29</span></a>
+<a href="#Kadastrale aanduiding">Kadastrale aanduiding<span class="align-right">30</span></a>
+<a href="#Eigenaren">Eigenaren<span class="align-right">31</span></a>
+<a href="#BAGPAND-ID's">BAGPAND-ID's<span class="align-right">32</span></a>
+
+      </p>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header">
+      <div class="header-content"></div>
+      <div class="header-line"></div>
+    </div>
+    <div class="content">
+      <h1 id="financial-statements">Informatie over de opdrachtbrief</h1>
+    </div>
+    <div class="footer">
+      <div class="footer-content"></div>
+      <div class="footer-page-number"></div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="header"> 
+        <div class="header-content"></div>
+		<div class="header-line"></div> 
+    </div> 
+  <div class="content"> 
+    <h1 id="Opdrachtbrief">Opdrachtbrief</h1> 
+    </div> 
+	<div class="footer"> 
+       <div class="footer-content"></div> 
+  <div class="footer-page-number"></div> 
+  </div> 
+  </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h2 id="Informatie over de opdrachtbrief">Informatie over de opdrachtbrief</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Rapportage">Rapportage</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Opdrachtnemer">Opdrachtnemer</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Opdrachtgever">Opdrachtgever</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Mede-opdrachtgever">Mede-opdrachtgever</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Klant">Klant</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Opdrachtinformatie">Opdrachtinformatie</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Honorarium">Honorarium</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Dataproduct verzoek">Dataproduct verzoek</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Bijlage">Bijlage</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h2 id="Vastgoedobject">Vastgoedobject</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Vastgoedobject referentie">Vastgoedobject referentie</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Vastgoedobject informatie">Vastgoedobject informatie</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Bezichtiging">Bezichtiging</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="BAGPAND-ID's">BAGPAND-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="BAGPAND-ID's">BAGPAND-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="BAGVBO-ID's">BAGVBO-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="Kadastrale aanduiding">Kadastrale aanduiding</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="BAGVBO-ID's">BAGVBO-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="BAGVBO-ID's">BAGVBO-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="Hoofdadres">Hoofdadres</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="BAGPAND-ID's">BAGPAND-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="Kadastrale aanduiding">Kadastrale aanduiding</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="BAGOTHER-ID's">BAGOTHER-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h3 id="Kadastrale aanduiding">Kadastrale aanduiding</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="Kadastrale aanduiding">Kadastrale aanduiding</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="Eigenaren">Eigenaren</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="BAGPAND-ID's">BAGPAND-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+<div class="page"><div class="header"> <div class="header-content"></div> <div class="header-line"></div> </div> <div class="content"> <h4 id="BAGVBO-ID's">BAGVBO-ID's</h1> </div> <div class="footer"> <div class="footer-content"></div> <div class="footer-page-number"></div> </div> </div>
+</body>
+
+</html>
