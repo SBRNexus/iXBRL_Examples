@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xml:lang="nl" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:nl-cd="http://www.nltaxonomie.nl/nt17/sbr/20220301/dictionary/nl-common-data" xmlns:frc-vt-i="https://www.sbrnexus.nl/vt17/frc/20230531.b/dictionary/frc-vt-data" xmlns:frc-vt-dim="https://www.sbrnexus.nl/vt17/frc/20230531.b/dictionary/frc-vt-axes" xmlns:frc-vt-dm="https://www.sbrnexus.nl/vt17/frc/20230531.b/dictionary/frc-vt-domains" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:utr="http://www.xbrl.org/2009/utr" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link:schemaRef xlink:type="simple" xlink:href="https://www.sbrnexus.nl/vt17/frc/20230531.b/entrypoints/frc-rpt-vt-opdrachtbrief.xsd"/>
+  <xbrli:context id="context_0">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:ReportAxis">frc-vt-dm:ReportMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_1">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:ReportAxis">frc-vt-dm:ReportMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_2">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:ClientAxis">frc-vt-dm:ClientMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_3">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:ContractorAxis">frc-vt-dm:ContractorMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_4">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:BAGOTHERIDAxis">
+        <frc-vt-dm:BAGOTHERIDTypedMember>BAGOTHER-1</frc-vt-dm:BAGOTHERIDTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_5">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:BAGPANDIDAxis">
+        <frc-vt-dm:BAGPANDIDTypedMember>BAGPAND-1</frc-vt-dm:BAGPANDIDTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_6">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+        <frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1</frc-vt-dm:BAGVBOIDTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_7">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:CoInstructorPartyAxis">frc-vt-dm:CoInstructorPartyMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_8">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:BAGVBOIDAxis">
+        <frc-vt-dm:BAGVBOIDTypedMember>BAGVBO-1
+</frc-vt-dm:BAGVBOIDTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_9">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+        <frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_10">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:OwnersAxis">
+        <frc-vt-dm:OwnersTypedMember>Eigenaar 1</frc-vt-dm:OwnersTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+        <frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_11">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:OwnersAxis">
+        <frc-vt-dm:OwnersTypedMember>Eigenaar 1</frc-vt-dm:OwnersTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:LandRegisterAxis">
+        <frc-vt-dm:LandRegisterTypedMember>Perceel 1</frc-vt-dm:LandRegisterTypedMember>
+      </xbrldi:typedMember>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_12">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:typedMember dimension="frc-vt-dim:RealEstatePropertyAxis">
+        <frc-vt-dm:RealEstatePropertyTypedMember>Vastgoedobject 1</frc-vt-dm:RealEstatePropertyTypedMember>
+      </xbrldi:typedMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_14">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:instant>2023-01-01</xbrli:instant>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:AssignmentInformationAxis">frc-vt-dm:AssignmentInformationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_17">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:ValuationRemunerationAxis">frc-vt-dm:ValuationRemunerationMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:context id="context_18">
+    <xbrli:entity>
+      <xbrli:identifier scheme="http://www.kvk.nl/kvk-id">34463476</xbrli:identifier>
+    </xbrli:entity>
+    <xbrli:period>
+      <xbrli:startDate>2023-01-01</xbrli:startDate>
+      <xbrli:endDate>2023-01-01</xbrli:endDate>
+    </xbrli:period>
+    <xbrli:scenario>
+      <xbrldi:explicitMember dimension="frc-vt-dim:PartyAxis">frc-vt-dm:DebtorPartyMember</xbrldi:explicitMember>
+    </xbrli:scenario>
+  </xbrli:context>
+  <xbrli:unit id="sqm">
+    <xbrli:measure>utr:sqm</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="pure">
+    <xbrli:measure>xbrli:pure</xbrli:measure>
+  </xbrli:unit>
+  <xbrli:unit id="eur">
+    <xbrli:measure>iso4217:EUR</xbrli:measure>
+  </xbrli:unit>
+  <nl-cd:DocumentCreationDate contextRef="context_0">2023-01-01</nl-cd:DocumentCreationDate>
+  <frc-vt-i:ReportingCurrency contextRef="context_0">EUR</frc-vt-i:ReportingCurrency>
+  <frc-vt-i:DocumentReportingDate contextRef="context_1">2023-01-01</frc-vt-i:DocumentReportingDate>
+  <frc-vt-i:Reference contextRef="context_2">11</frc-vt-i:Reference>
+  <frc-vt-i:ReferenceAllocatedByPartyType contextRef="context_2">3</frc-vt-i:ReferenceAllocatedByPartyType>
+  <frc-vt-i:ReferenceAllocatedByPartyReferenceDescription contextRef="context_2">Toelichting</frc-vt-i:ReferenceAllocatedByPartyReferenceDescription>
+  <frc-vt-i:ReferenceDescription contextRef="context_2">Toelichting</frc-vt-i:ReferenceDescription>
+  <frc-vt-i:OrganisationName contextRef="context_2">Vastgoed BV</frc-vt-i:OrganisationName>
+  <frc-vt-i:ShortName contextRef="context_2">Vastgoed</frc-vt-i:ShortName>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_2">98765432</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <nl-cd:FamilyName contextRef="context_2">Engelen</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_2">Toos</nl-cd:FirstName>
+  <nl-cd:Prefix contextRef="context_2">van</nl-cd:Prefix>
+  <frc-vt-i:TitlesPrefix contextRef="context_2">mr.</frc-vt-i:TitlesPrefix>
+  <frc-vt-i:JobTitle contextRef="context_2">Beheerder</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_2">0344634769</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_2">vastgoed@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:Reference contextRef="context_3">10</frc-vt-i:Reference>
+  <frc-vt-i:ReferenceAllocatedByPartyType contextRef="context_3">1</frc-vt-i:ReferenceAllocatedByPartyType>
+  <frc-vt-i:ReferenceAllocatedByPartyReferenceDescription contextRef="context_3">Toelichting</frc-vt-i:ReferenceAllocatedByPartyReferenceDescription>
+  <frc-vt-i:ReferenceDescription contextRef="context_3">Toelichting</frc-vt-i:ReferenceDescription>
+  <frc-vt-i:OrganisationName contextRef="context_3">Test BV</frc-vt-i:OrganisationName>
+  <frc-vt-i:ShortName contextRef="context_3">Test</frc-vt-i:ShortName>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_3">87654321</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <nl-cd:FamilyName contextRef="context_3">Vries</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_3">Jan</nl-cd:FirstName>
+  <nl-cd:Prefix contextRef="context_3">de</nl-cd:Prefix>
+  <frc-vt-i:TitlesPrefix contextRef="context_3">drs</frc-vt-i:TitlesPrefix>
+  <frc-vt-i:JobTitle contextRef="context_3">Beoordelaar</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_3">034463476</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_3">test@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:BAGOTHERID contextRef="context_4">BAGOTHER-1</frc-vt-i:BAGOTHERID>
+  <frc-vt-i:BAGPANDID contextRef="context_5">BAGPAND-1</frc-vt-i:BAGPANDID>
+  <frc-vt-i:BAGVBOID contextRef="context_6">BAGVBO-1</frc-vt-i:BAGVBOID>
+  <frc-vt-i:OrganisationName contextRef="context_7">Bank BV</frc-vt-i:OrganisationName>
+  <frc-vt-i:ShortName contextRef="context_7">Bank</frc-vt-i:ShortName>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_7">11111111</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <nl-cd:FamilyName contextRef="context_7">Kerstens</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_7">Jan</nl-cd:FirstName>
+  <frc-vt-i:JobTitle contextRef="context_7">Beheerder</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_7">0101234567</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_7">jan@test.nl</nl-cd:EmailAddressFull>
+  <nl-cd:DescriptionLocationNL contextRef="context_8">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_8">Straatweg</nl-cd:StreetNameNL>
+  <frc-vt-i:StreetNameNLFull contextRef="context_8">Straatweg</frc-vt-i:StreetNameNLFull>
+  <nl-cd:HouseNumberNL contextRef="context_8">1</nl-cd:HouseNumberNL>
+  <nl-cd:HouseNumberAddition contextRef="context_8">a</nl-cd:HouseNumberAddition>
+  <nl-cd:PostalCodeNL contextRef="context_8">1111AA</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_8">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <frc-vt-i:LandRegister contextRef="context_9">Amsterdam</frc-vt-i:LandRegister>
+  <frc-vt-i:LandRegisterCode contextRef="context_9">111</frc-vt-i:LandRegisterCode>
+  <frc-vt-i:LandRegisterSection contextRef="context_9">222</frc-vt-i:LandRegisterSection>
+  <frc-vt-i:LandRegisterNumber contextRef="context_9">333</frc-vt-i:LandRegisterNumber>
+  <frc-vt-i:LandRegisterIndexNumberApartmentRight contextRef="context_9">44</frc-vt-i:LandRegisterIndexNumberApartmentRight>
+  <frc-vt-i:GroundInterest contextRef="context_9">1</frc-vt-i:GroundInterest>
+  <frc-vt-i:LandRegisterComments contextRef="context_9">Geen</frc-vt-i:LandRegisterComments>
+  <frc-vt-i:LandRegisterArea decimals="INF" contextRef="context_9" unitRef="sqm">500</frc-vt-i:LandRegisterArea>
+  <frc-vt-i:RightOfResidence contextRef="context_9">Ja</frc-vt-i:RightOfResidence>
+  <frc-vt-i:OwnerAccordingToLandRegister contextRef="context_10">R. van Dijk</frc-vt-i:OwnerAccordingToLandRegister>
+  <frc-vt-i:OwnershipPercentage decimals="INF" contextRef="context_10" unitRef="pure">1</frc-vt-i:OwnershipPercentage>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_11">45678789</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <frc-vt-i:ActualUse contextRef="context_12">10</frc-vt-i:ActualUse>
+  <frc-vt-i:LeasedOrUsedByOwner contextRef="context_12">2</frc-vt-i:LeasedOrUsedByOwner>
+  <frc-vt-i:IPDTypeProperty contextRef="context_12">2</frc-vt-i:IPDTypeProperty>
+  <frc-vt-i:IPDSubtype contextRef="context_12">1</frc-vt-i:IPDSubtype>
+  <frc-vt-i:AssignmentDate contextRef="context_14">2020-12-21</frc-vt-i:AssignmentDate>
+  <frc-vt-i:TypeOfInstructor contextRef="context_14">1</frc-vt-i:TypeOfInstructor>
+  <frc-vt-i:AssignmentTerms contextRef="context_14">Tekst</frc-vt-i:AssignmentTerms>
+  <frc-vt-i:AssignmentTermsBy contextRef="context_14">Tekst</frc-vt-i:AssignmentTermsBy>
+  <frc-vt-i:SpecialPrinciples contextRef="context_14">Tekst</frc-vt-i:SpecialPrinciples>
+  <frc-vt-i:ReportingDate contextRef="context_14">2023-01-01</frc-vt-i:ReportingDate>
+  <frc-vt-i:ValuationType contextRef="context_14">20</frc-vt-i:ValuationType>
+  <frc-vt-i:ValuationPurpose contextRef="context_14">10</frc-vt-i:ValuationPurpose>
+  <frc-vt-i:PurposeExplanation contextRef="context_14">Toelichting</frc-vt-i:PurposeExplanation>
+  <nl-cd:FamilyName contextRef="context_12">Westerlee</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_12">Patricia</nl-cd:FirstName>
+  <frc-vt-i:JobTitle contextRef="context_12">Taxateur</frc-vt-i:JobTitle>
+  <nl-cd:TelephoneNumber contextRef="context_12">0201234567</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_12">p@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:InspectionAdditionalInformation contextRef="context_12">Toelichting</frc-vt-i:InspectionAdditionalInformation>
+  <frc-vt-i:TotalRemunerationExVAT decimals="INF" contextRef="context_17" unitRef="eur">1000</frc-vt-i:TotalRemunerationExVAT>
+  <frc-vt-i:InvoicePartyType contextRef="context_17">1</frc-vt-i:InvoicePartyType>
+  <frc-vt-i:InvoiceParty contextRef="context_17">Vastgoed BV</frc-vt-i:InvoiceParty>
+  <frc-vt-i:InvoiceContactPerson contextRef="context_17">Administratie</frc-vt-i:InvoiceContactPerson>
+  <nl-cd:DescriptionLocationNL contextRef="context_17">Omschrijving</nl-cd:DescriptionLocationNL>
+  <nl-cd:StreetNameNL contextRef="context_17">Kerkstraat</nl-cd:StreetNameNL>
+  <nl-cd:HouseNumberNL contextRef="context_17">1</nl-cd:HouseNumberNL>
+  <nl-cd:HouseNumberAddition contextRef="context_17">a</nl-cd:HouseNumberAddition>
+  <nl-cd:PostalCodeNL contextRef="context_17">2222AA</nl-cd:PostalCodeNL>
+  <nl-cd:PlaceOfResidenceNL contextRef="context_17">Amsterdam</nl-cd:PlaceOfResidenceNL>
+  <frc-vt-i:DebitorType contextRef="context_18">1</frc-vt-i:DebitorType>
+  <frc-vt-i:OrganisationName contextRef="context_18">Naam B.V.</frc-vt-i:OrganisationName>
+  <frc-vt-i:ShortName contextRef="context_18">Naam</frc-vt-i:ShortName>
+  <nl-cd:ChamberOfCommerceRegistrationNumber contextRef="context_18">34463476</nl-cd:ChamberOfCommerceRegistrationNumber>
+  <nl-cd:Initials contextRef="context_18">ABC</nl-cd:Initials>
+  <nl-cd:FamilyName contextRef="context_18">Vries</nl-cd:FamilyName>
+  <nl-cd:FirstName contextRef="context_18">Johan</nl-cd:FirstName>
+  <nl-cd:DateOfBirth contextRef="context_18">1971-01-12</nl-cd:DateOfBirth>
+  <nl-cd:TelephoneNumber contextRef="context_18">324135</nl-cd:TelephoneNumber>
+  <nl-cd:EmailAddressFull contextRef="context_18">j@test.nl</nl-cd:EmailAddressFull>
+  <frc-vt-i:SoftwareUsed contextRef="context_1">Naam softwarepakket</frc-vt-i:SoftwareUsed>
+  <frc-vt-i:SoftwareUsedReference contextRef="context_1">111</frc-vt-i:SoftwareUsedReference>
+  <frc-vt-i:ContractorType contextRef="context_3">1</frc-vt-i:ContractorType>
+  <frc-vt-i:ClientType contextRef="context_2">1</frc-vt-i:ClientType>
+</xbrli:xbrl>
